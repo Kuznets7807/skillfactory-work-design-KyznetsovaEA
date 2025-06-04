@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "NunitoSans-Italic";
+    font-style: normal;
+    font-weight: 400;
+    src: local("NunitoSans-Italic"),
+             url("font/NunitoSans-Italic.woff2") format("woff2");
+  }
+
+@font-face {
+    font-family: "NunitoSans-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("NunitoSans-Regular"),
+             url("font/NunitoSans-Regular.woff2") format("woff2");
+  }
+
+@font-face {
+    font-family: "YesevaOne-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("YesevaOne-Regular"),
+             url("font/YesevaOne-Regular.woff2") format("woff2"),
+             url("font/YesevaOne-Regular.woff") format("woff");
+  }
