@@ -36,7 +36,7 @@
       </ul>
     </nav>
     <span class="header__tel"><a class="header__link-tel" href="#">+7 (928) 768-32-39</a></span>
-    <button type="requestacall" class="buttons header__btn">Request a call</button>
+    <button type="button" name="requestacall" class="buttons header__btn">Request a call</button>
   </div>
   </header>
   <main>
@@ -48,8 +48,8 @@
         with work time saving up to 45 days and 20% from
         cost of materials due to the organization of work</p>
         <div class="hero__wrap-btn">
-          <button type="calculate" class="buttons hero__btn1">CALCULATE THE COST</button>
-          <button type="sumbityran" class="buttons hero__btn2">SUBMIT YOUR APPLICATION</button>
+          <button name="calculate" class="buttons hero__btn1">CALCULATE THE COST</button>
+          <button name="sumbityran" class="buttons hero__btn2">SUBMIT YOUR APPLICATION</button>
         </div>
       </div> 
     </section>
@@ -72,6 +72,11 @@
             <h2 class="hero1__heading">Completed<br>projects</h2>
             <p class="hero1__text">Only a small part of the work performed by our company is presented<br> on the site. For 14 years on in the construction<br> 
 market we have made happy more than 1000 families</p>
+            <div class="hero1__div6">
+              <img class="hero1__image" src="./images/png/hero1.png" alt="photo of a beautiful room">
+              <button type="button" name="anticipating" title="anticipating" class="buttons hero1__btn position"></button>
+              <button type="button" name="next" title="next" class="buttons hero1__btn1 position"></button>
+            </div>
             <div class="hero1__div3">
               <div>
                 <h3 class="hero1__heading1">City:</h3>
@@ -114,7 +119,7 @@ market we have made happy more than 1000 families</p>
         </div>
         <div class="hero2__div1">
           <img class="hero2__image" src="./images/png/hero2.png" alt="repair photos">
-          <button type="video" class="buttons hero2__btn position"></button>
+          <button name="video"  type="button" title="watch the video" class="buttons hero2__btn position"></button>
           <hr class="hero2__hr">
           <p class="hero2__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
             Leave a request below and you will receive a link to the broadcast.</p>
@@ -239,15 +244,15 @@ market we have made happy more than 1000 families</p>
             <div class="hero3__div-input1">
               <span class="hero2__text-span">Name</span>
               <p class="hero3__text-form">
-                <label for="name">What is your name:</label>
-                <input type="name" name="name" id="name" required>
+                <label for="name1">What is your name:</label>
+                <input type="name" name="name1" id="name1" required>
               </p>
             </div>
             <div class="hero3__div-input2">
               <span class="hero2__text-span1">Phone</span>
               <p class="hero3__text-form1">
-                <label for="phone">Your phone number:</label>
-                <input type="phone" name="phone" id="phone" required>
+                <label for="phone1">Your phone number:</label>
+                <input type="phone" name="phone1" id="phone1" required>
               </p>
             </div>
             <div class="hero3__div-input3">
@@ -259,11 +264,11 @@ market we have made happy more than 1000 families</p>
             </div>
             <fieldset class="hero3__fildset">
                 <div class="hero2__div-input form-agree">
-                  <input type="checkbox" id="agree" name="agree" checked />
-                  <label for="agree">I agree to the processing of personal data</label>
+                  <input type="checkbox" id="agree1" name="agree1" checked />
+                  <label for="agree1">I agree to the processing of personal data</label>
                 </div>
             </fieldset>
-            <button type="callthemeasurer" class="buttons hero3__btn1">Call the measurer</button>
+            <button type="submit" name="callthemeasurer" class="buttons hero3__btn1">Call the measurer</button>
           </form> 
         </div>
         <div class="hero3__div-img2">
@@ -278,6 +283,11 @@ market we have made happy more than 1000 families</p>
       <div class="hero4__div-img-text-wrap">
         <div class="hero4__div-wrap">
           <h2 class="hero1__heading hero4__heiding">We realize your<br>wildest fantasies</h2>
+          <div class="hero4__div6">
+            <img class="hero4__image" src="./images/png/mobil_foto3.png" alt="photo of a beautiful room">
+            <button type="button" name="anticipating" title="anticipating" class="buttons hero4__btn2 position"></button>
+            <button type="button" name="next" title="next" class="buttons hero4__btn1 position"></button>
+          </div>
           <ul class="hero4__list">
             <li class="hero4__item"><a class="hero4__link" href="#">American classic</a>
             </li>
@@ -320,9 +330,9 @@ market we have made happy more than 1000 families</p>
     <section class="hero5">
       <h3 class="hero3__heiding">our clients</h3>
         <div class="hero3__div-img">
-          <img class="hero5__image" src="./images/svg/line.svg" alt="line" width="32" height="3">
-          <img class="hero5__image" src="./images/svg/hends.svg" alt="hends" width="32" height="28">
-          <img class="hero5__image" src="./images/svg/line.svg" alt="line" width="32" height="3">
+          <img class="hero5__image" src="./images/svg/line.svg"  title="line image" alt="line" width="32" height="3">
+          <img class="hero5__image" src="./images/svg/hends.svg" title="hends image" alt="hends" width="32" height="28">
+          <img class="hero5__image" src="./images/svg/line.svg" title="line image" alt="line" width="32" height="3">
         </div>
         <p class="hero2__text">80% of our customers recommend us to their<br>
           friends and family.</p>
@@ -330,7 +340,8 @@ market we have made happy more than 1000 families</p>
             <div class="hero5__card">
               <div class="hero5__imgh5text-wrap">
                 <div class="hero5__imgh5-wrap">
-                  <img class="hero5__img" src="./images/png/Fedosova.png"/>
+                  <img class="hero5__img" title="Fedosova Maria
+                  Konstantinovna" src="./images/png/Fedosova.png"/>
                   <h5 class="hero5__heading">Fedosova Maria
                     Konstantinovna</h5>
                 </div>
@@ -340,12 +351,12 @@ to Georgia for its professionalism and<br> approach.<br>
 The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these<br> masters.
                 </p>
               </div>
-              <button type="button" class="buttons hero5__btn position btn__one"></button>
+              <button type="button" title="40 m2 48 days" class="buttons hero5__btn position btn__one"></button>
             </div>
             <div class="hero5__card">
               <div class="hero5__imgh5text-wrap">
                 <div class="hero5__imgh5-wrap">
-                  <img class="hero5__img" src="./images/png/afanasyev.png"/>
+                  <img class="hero5__img" title="Afanasyev Sergey Alexandrovich" src="./images/png/afanasyev.png"/>
                   <h5 class="hero5__heading">Afanasyev Sergey Alexandrovich</h5>
                 </div>
                 <p class="hero5__text">
@@ -354,12 +365,12 @@ to Georgia for its professionalism and<br> approach.<br>
 The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these<br> masters.
                 </p>
               </div>
-              <button type="button" class="buttons hero5__btn position btn__two"></button>
+              <button type="button" title="90 m2 128 days" class="buttons hero5__btn position btn__two"></button>
             </div>
             <div class="hero5__card">
               <div class="hero5__imgh5text-wrap">
                 <div class="hero5__imgh5-wrap">
-                  <img class="hero5__img" src="./images/png/kireev.png"/>
+                  <img class="hero5__img" title="Kiriev Egor Leonidovich" src="./images/png/kireev.png"/>
                   <h5 class="hero5__heading">Kiriev Egor<br> Leonidovich</h5>
                 </div>
                 <p class="hero5__text">
@@ -368,7 +379,7 @@ to Georgia for its professionalism and<br> approach.<br>
 The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these<br> masters.
                 </p>
               </div>
-              <button type="button" class="buttons hero5__btn position btn__three"></button>
+              <button type="button" title="56 m2 86 days" class="buttons hero5__btn position btn__three"></button>
             </div>
           </div>
     </section>
@@ -399,18 +410,18 @@ The repair process was turned out in terms, faster than anticipated. Team mobile
           </div>
           <fieldset class="hero6__fildset">
               <div class="hero2__div-input form-agree">
-                <input type="checkbox" id="agree" name="agree" checked />
-                <label for="agree">I agree to the processing of personal data</label>
+                <input type="checkbox" id="agree2" name="agree2" checked />
+                <label for="agree2">I agree to the processing of personal data</label>
               </div>
           </fieldset>
-          <button type="Submit" class="buttons hero4__btn">Submit</button>
+          <button type="submit" class="buttons hero4__btn">Submit</button>
         </form>
       </div>
       <h4 class="hero6__heading">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
         Decorum Tel +7 (928) 768 32 29</h4>
         <div class="hero6__img-wrap">
-          <img class="hero6__img" src="./images/svg/pismo.svg">
-          <img class="hero6__img img-two" src="./images/svg/camera_zamer.svg">
+          <img class="hero6__img" title="pismo image" src="./images/svg/pismo.svg">
+          <img class="hero6__img img-two" title="camera image" src="./images/svg/camera_zamer.svg">
         </div>
         <div class="hero6__img-karta position"></div>
     </section> 
