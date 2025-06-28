@@ -307,7 +307,7 @@ h4 {
 /*Настройка блока hero2*/
 
 .hero2{
-    min-height: 950px;
+    min-height: 1000px;
     margin-top:-330px;
     display: flex;
     flex-direction: column;
@@ -318,6 +318,7 @@ h4 {
 .hero2__div1{
     max-width: 817px;
     height: 434px;
+    position: relative;
 }
 
 .hero2__btn {
@@ -326,7 +327,7 @@ h4 {
     position: absolute;
     z-index: 1;
     top: 190px;
-    left: 380px;
+    left: 385px;
     cursor: pointer;
     background-image: url("./images/png/круглый1.png");
     border-radius: 50px;
@@ -348,7 +349,6 @@ h4 {
     font-style: normal;
     margin-top: 40px;
 }
-
 .hero2-image,
 .hero3__image-l,
 .hero3__image-h,
@@ -371,10 +371,6 @@ h4 {
     justify-content: space-between;
 }
 
-.hero2__div1{
-    position: relative;
-}
-
 .hero2__div1:after{
     content: "";
     position: absolute;
@@ -394,7 +390,7 @@ h4 {
 .hero2__form {
     display: grid;
     grid-template-columns: 1fr 1fr 200px;
-    grid-template-rows: 51px 51px;
+    grid-template-rows: 50% 30px;
     max-width: 880px;
     min-height: 102px;
     justify-content: end;
@@ -480,7 +476,7 @@ input[type="checkbox"]:focus {
 /*Настройка блока hero3*/
 
 .hero3{
-    height: 1950px;
+    max-height: 2600px;
 }
 
 .hero3__heiding{
@@ -500,9 +496,9 @@ input[type="checkbox"]:focus {
 
 .hero3__div-wrap{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
 .hero3__div2{
@@ -612,7 +608,7 @@ input[type="checkbox"]:focus {
     grid-column: 2;
     grid-row: 1;
     background-color: black;
-    width: 506px;
+    max-width: 506px;
     height: 509px;
     margin: 125px 45px 20px 125px;
 }
@@ -645,7 +641,7 @@ input[type="checkbox"]:focus {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
     gap: 9px;
-    padding: 27px 49px;
+    padding: 25px;
 }
 
 .hero3__div-input1,
@@ -674,10 +670,12 @@ input[type="checkbox"]:focus {
     height: 18px;
 }
 
-input[type="name"],
-input[type="phone"],
+input[name="name1"],
+input[name="phone1"],
+input[name="name2"],
+input[name="phone2"],
 input[type="email"],
-input[type="question"] {
+input[name="question"] {
     appearance: none;
     background-color: black;
     margin: 0;
@@ -821,7 +819,7 @@ input[type="question"] {
 /*Настройка блока hero5*/
 
 .hero5{
-    min-height: 1225px;
+    min-height: 1500px;
     background-image: url("./images/png/hero_fon_list3.png");
     background-size: 50% 800px;
     background-repeat: repeat-x;
@@ -900,6 +898,7 @@ input[type="question"] {
 
 .hero5__card-wrap{
     display: flex;
+    flex-wrap: wrap;
     gap: 54px;
     justify-content: center;
 }
@@ -944,7 +943,7 @@ input[type="question"] {
 }
 
 .hero6__img-karta{
-    max-width: 925px;
+    width: 925px;
     height: 465px;
     background-image: url("./images/png/carta.png");
     margin: 0 auto;
@@ -955,8 +954,6 @@ input[type="question"] {
     max-height: 445px;
     background-color: black;
     margin-top: -225px;
-    padding: 35px 181px;
-    margin-bottom: 45px;
 }
 
 .hero6__form{
@@ -968,6 +965,7 @@ input[type="question"] {
     background-color: black;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .hero6__form-legend{
@@ -1058,11 +1056,19 @@ input[type="question"] {
     .hero__div {
         max-width: 100%;
     }
-    
+    .hero2{
+        max-height: max-content;
+    }
     .hero__div,
     .hero1__div2,
     .hero4__div-img-text-wrap{
         padding-left: 25px;
+    }
+
+    .hero1__div4,
+    .hero1__image{
+        max-width: 450px;
+        min-height: 350px;
     }
 
     .hero1__text,
@@ -1070,123 +1076,11 @@ input[type="question"] {
         margin-bottom: 0;
     }
 
-    .hero3{
-        min-height: 2450px ;
+    .hero2__div1{
+        max-width: 750px;
+        height: 434px;
     }
     
-    .hero3__div-wrap{
-        margin: 0;
-    }
-
-    .hero3__div-wrap4{
-        gap: 8px;
-    }
-   
-    .hero3__div-wrap,
-    .hero5__card-wrap{
-        flex-wrap: wrap;
-    }
-    .hero5{
-        min-height: 1725px;
-    }
-}
-
-/*настройка отображения на экране 768px*/
-
-@media screen and (max-width: 768px){
-    
-    .header__link-tel,
-    .header__btn,
-    .hero1__div4,
-    .hero1__div,
-    .hero1__div5,
-    .hero3__div-wrap2,
-    .hero5,
-    .hero4__div-img-wrap,
-    .hero4__div-img-wrap1{
-        display: none;
-    }
-
-    .hero4__div-img-text-wrap{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero4__div-wrap{
-        margin-top: -225px;
-    }
-
-    .hero4__list{
-        display: none;
-    }
-
-    .hero4__div6{
-        display: flex;
-        position: relative;
-        max-width: 400px;
-        min-height: 215px;
-    }
-
-    .hero4__btn2,
-    .hero4__btn1,
-    .hero1__btn,
-    .hero1__btn1{
-        width: 55px;
-        min-height: 55px;
-        position: absolute;
-        z-index: 1;
-        cursor: pointer;
-        border-radius: 50px;
-        padding: 0;
-    }
-
-    .hero4__btn2,
-    .hero1__btn{
-        background-image: url('./images/png/c.lf.png');
-    }
-
-    .hero4__btn2{
-        top: 105px;
-        left: 38px;
-    }
-
-    .hero1__btn1,
-    .hero4__btn1{
-        background-image: url('./images/png/nelf.png'); 
-    }
-
-    .hero4__btn1{
-        top: 105px;
-        right: 38px;
-
-    .hero4{
-        background-image: none;
-        background-color: #181818;
-    }
-
-    .hero4__heiding{
-        text-align: center;
-    }
-    
-    .header-container{
-        max-width: 100%;
-        gap: 150px;
-        padding-left: 25px;
-    }
-
-    .hero6__img-karta{
-        max-width: 668px;
-    }
-    .hero6__div-form{
-        max-width: 768px;
-        padding: 35px;
-    }
-    .hero2__text{
-        padding: 0;
-    }
     .hero2__form{
         display: grid;
         grid-template-columns: repeat(2,1fr) ;
@@ -1194,10 +1088,14 @@ input[type="question"] {
         max-width: 768px;
         min-height: 200px;
         gap: 15px;
+        justify-content: center;
+        align-items: center;
     }
+
     .hero2__div-input1{
         grid-column: 1;
         grid-row: 1;
+        
     }
     .hero2__div-input2{
         grid-column: 2;
@@ -1210,142 +1108,195 @@ input[type="question"] {
     .hero2__btn1{
         grid-column: 2;
         grid-row: 2;
+        max-height: 51px;
     }
-    .hero2__div1,
-    .hero2__image{
-        max-width: 560px;
-        height: 297px;
+    .hero2__div-input1,
+    .hero2__div-input2{
+        display: flex;
+        flex-direction: column;
     }
-    .hero2__btn{
-        top: 125px;
-        left: 235px;
-    }
-    .hero1__image{
-        max-width: 468px;
-    }
-    .hero2__btn1{
-        max-height: 75px;
-    } 
-    .hero3__heiding{
-        padding-top: 58px;
-    }
-    .hero3{
-        min-height: 2250px;
-    }
-    
-}
 
-/*настройка отображения на экране 320px*/
-@media screen and (max-width: 425px) {
+    .hero2__btn {
+        width: 75px;
+        min-height: 75px;
+        position: absolute;
+        z-index: 1;
+        top: 120px;
+        left: 295px;
+        cursor: pointer;
+        background-image: url("./images/png/круглый1.png");
+        border-radius: 50px;
+        padding: 0;
+    }
 
-    .header__nav,
-    .hero1__div,
-    .hero1__div5,
-    .hero1__div4 {
+    .hero1__div5{
         display: none;
     }
 
-    .header__link-tel{
-        display: block;
+    .hero2__div1,.hero2__image {
+        max-width: 660px;
+        height: 434px;
+    }
+
+    .hero3{
+        max-height: 3500px;
+        margin-bottom: 30px;
+    }
+
+    .hero3__div-wrap{
+        margin: 0;
+    }
+
+    .hero3__div-wrap4{
+        gap: 8px;
+    }
+
+    .hero3__div-img2{
+        justify-content: start;
+        max-width: max-content;
+    }
+
+    .hero3__div-wrap5{
+        max-width: 506px;
+        margin: 0 auto;
+        max-height: max-content;
+    }
+
+    .hero4__div-img-wrap,
+    .hero4__div-img-wrap1,
+    .hero4__div-img1,
+    .hero4__div-img2{
+        width: 250px;
+    }
+    .hero6__div-form{
+        margin-top: 50px;
+    }
+    .hero5{
+        display: none;
+    }
+    .hero6__heading{
+        margin-top: 50px;
+    }
+    .hero6__img-karta{
+        width: 650px;
+        height: 400px;
+    }
+
+    .hero6__div-form{
+        max-width: max-content;
+    }
+    .hero6__form{
+        padding: 15px;
+    }
+}
+
+/*настройка отображения на экране 768px*/
+
+@media screen and (max-width: 768px){
+    
+    .header__nav,
+    .header__btn,
+    .hero1__div4,
+    .hero1__div,
+    .hero1__div5,
+    .hero3__div-wrap2,
+    .hero5,
+    .hero4__div-img-wrap,
+    .hero4__div-img-wrap1{
+        display: none;
+    }
+    .header, .footer{
+        justify-content: start;
     }
     .header-container{
-        justify-content: center;
-        padding: 0;
-        gap: 120px;
-    }
-    .hero{
-        height: 450px;
-        min-width: 375px;
-        padding: 0;
+        gap: 21px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .hero__wrap-btn{
         flex-direction: column;
     }
 
-    .hero__heading1{
-        font-size: 23px;
-    }
-    .hero__wrap-btn{
-        width: auto;
-        margin: 0 auto;
+    .hero{
+        max-height: max-content;
+        padding-top: 25px;
+        height: 800px;
     }
 
-    .hero__btn1,
-    .hero__btn2,
-    .hero__wrap-btn {
-        min-width: 370px;
-    }
-
-    .hero__text{
-        font-size: 14px;
-    }
-    .hero__div{
-        padding: 10% 5%;
-    }
-
-    .hero1__div6{
+    .hero1{
         display: flex;
-        position: relative;
-        max-width: 400px;
-        min-height: 215px;
-    }
-
-    .hero1__btn{
-        top: 125px;
-        left: 38px;
-    }
-
-    .hero1__btn1{
-        top: 125px;
-        right: 38px;
     }
 
     .hero1__div2{
         padding: 0;
-        gap: 15px;
-        justify-content: center;
+        max-width: max-content;
+        margin: 0 auto;
         align-items: center;
     }
-    .hero1{
-        display: block;
-        max-width: 425px;
-        min-height: 1100px;
-    }
 
-    .hero1__image{
-        max-width: 400px;
-        min-height: 215px;
-    }
-
-    .hero1__text,
     .hero1__heading{
-        text-align: center;
+        margin-top: 25px;
+    }
+
+    .hero1__heading,
+    .hero1__text{
+       text-align: center;
+    }
+    
+    .hero1__div6,
+    .hero4__div6{
+        display: flex;
+        position: relative;
+        max-width: 700px;
+    }
+    .hero4__btn2,
+    .hero4__btn1,
+    .hero1__btn,
+    .hero1__btn1{
+        width: 35px;
+        min-height: 35px;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50px;
+        padding: 0;
+    }
+
+    .hero4__btn2,
+    .hero1__btn{
+        background-image: url('./images/png/c.lf.png');
+    }
+
+    .hero4__btn2,
+    .hero1__btn{
+        top: 110px;
+        left: 30px;
+    }
+
+    .hero1__btn1,
+    .hero4__btn1{
+        background-image: url('./images/png/nelf.png'); 
+    }
+
+    .hero4__btn1,
+    .hero1__btn1{
+        top: 110px;
+        right: 30px;
     }
 
     .hero2{
         background-color: #181818;
     }
 
-    .hero2__div1,
-    .hero2__image{
-        max-width: 340px;
-        height: 207px;
-    }
-
-    .hero2__btn{
-        top: 80px;
-        left: 140px;
-        width: 55px;
-        min-height: 55px;
+    .hero2__text{
+        color: #FFFFFF;
     }
 
     .hero2__form{
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,25%);
-        justify-content: end;
-        align-items: end;
+        grid-template-rows: repeat(4,50px);
+        margin-top: 65px;
+        max-width: 390px;
     }
 
     .hero2__div-input1{
@@ -1363,20 +1314,18 @@ input[type="question"] {
         grid-row: 3;
         align-items: start;
         justify-content: start;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
     .hero2__btn1{
         grid-column: 1;
         grid-row: 4;
-        max-width: 370px;
     }
 
-    .hero2__text,    
-    .hero2__text-form,
-    .hero2__text-form1,
-    .hero2__div-input label{
+    input[name="surname"],
+    input[name="telephone"]{
+        background-color: #181818;
         color: #FFFFFF;
     }
 
@@ -1385,29 +1334,316 @@ input[type="question"] {
         color: rgba(255, 255, 255, 0.5);
     }
 
-    input[type="surname"],
-    input[type="telephone"] {
-        appearance: none;
-        background-color: black;
-        margin: 0;
+    .hero2__text-form,
+    .hero2__text-form1,
+    .hero2__div-input{
         color: #FFFFFF;
     }
 
-    .hero2__div-input1,
-    .hero2__div-input2{
-        display: flex;
-        flex-direction: column;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    .hero2__text-form,
+    .hero2__text-form1{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+    .hero2__text{
+        padding: 0;
+    }
+
+    .hero2__div1,
+    .hero2__image {
+        max-width: 375px;
+        height: 243px;
     }
     
-    .hero6__img-karta{
-        max-width: 340px;
-        min-height: 255px;
+    .hero2__btn{
+        top: 105px;
+        left: 175px;
+        width: 35px;
+        min-height: 35px;
+    }
+
+    .hero2__btn1{
+        max-height: 75px;
+    }
+
+    .hero3__heiding{
+        padding-top: 58px;
+    }
+
+    .hero3{
+        min-height: 2350px;
+    }
+
+    .hero4__div-img-text-wrap{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero4__div-wrap{
+        margin-top: -225px;
+    }
+
+    .hero4__list{
+        display: none;
+    } 
+
+    .hero3__div3,
+    .hero3__btn{
+        margin-left: 0;
+    }
+
+    .bckgb-img-card2{
+        background-image: url(./images/png/mobil_foto2.png);
+    }
+
+    .hero4{
+        background-image: none;
+        background-color: #181818;
+        height: 200px;
+    }
+
+    .hero4__heiding{
+        text-align: center;
+    }
+
+    .hero6__form{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,70px);
+        height: 450px;
+        max-width: 80%;
+        padding: 0;
+    }
+
+    .hero6__form-legend{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hero6__div-input1{
+        margin: 0;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .hero6__div-input2{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .hero6__div-input3{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .hero6__fildset{
+        grid-column: 1;
+        grid-row: 5;
+        align-items: start;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero4__btn{
+        grid-column: 1;
+        grid-row: 6;
+        align-items: start;
+        margin: 0;
+    }
+
+    .hero6{
+        min-height: 1000px;
+        background-image: none;
+        background-color: #181818;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 40% 5% 5%;
+        justify-content: center;
     }
 
     .hero6__div-form{
-        max-width: 340px;
-        min-height: 419px;
-        padding: 0;
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 375px;
+        max-height: 850px;
+        margin: 0;
     }
+
+    .hero6__img-karta{
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 375px;
+    }
+
+    .hero6__heading{
+        grid-column: 1;
+        grid-row: 3;
+        margin: 0;
+    }
+
+    .hero6__img-wrap{
+        grid-column: 1;
+        grid-row: 4;
+        margin: 0;
+    }
+}
+
+/*настройка отображения на экране 375px*/
+
+@media screen and (max-width: 376px){
+    
+    
+    .footer{
+        display: none;
+    }
+
+    .header{
+        justify-content: center;
+    }
+
+    .header__link-tel{
+        color: #FFFFFF;
+    }
+
+    .hero__div,
+    .hero1__text,
+    .hero1__div3,
+    .hero2__text,
+    .hero2__form
+    {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .header-container{
+        padding: 0;
+        gap: 56px;
+    }
+
+
+    .hero{
+        padding-top: 85px;
+    }
+
+    .hero__btn1,
+    .hero__btn2,
+    .hero2__btn1 {
+        max-width: 338px;
+    }
+
+    .hero__wrap-btn{
+        width: 339px;
+        gap: 26px;
+    }
+
+    .hero2__div1,
+    .hero2__image {
+        max-width: 350px;
+        height: 223px;
+    }
+
+    .hero2__btn{
+        top: 100px;
+        left: 165px;
+    }
+
+    .hero2__form{
+        gap: 19px;
+    }
+
+    .hero3__div2 {
+        min-height: 350px;
+        max-width: 352px;
+    }
+
+    .hero3 {
+        min-height: 2150px;
+    }
+
+    .hero4__btn{
+        width: 338px;
+    }
+
+    .hero4__div-wrap {
+        margin-top: -250px;
+    }
+
+    .hero6__form{
+        max-width: 85%;
+    }
+
+    .hero6__img-wrap{
+        margin-top: 23px;
+    }
+
+    .hero6__img-karta{
+        max-width: 340px;
+    }
+}
+
+/*настройка отображения на экране 320px*/
+
+@media screen and (max-width: 320px){
+    .hero__btn1,
+    .hero__btn2,
+    .hero2__btn1,
+    .hero4__btn{
+        max-width: 238px;
+    }
+
+    .hero__wrap-btn{
+        width: 310px;
+    }
+
+    .header-container{
+        gap: 25px;
+    }
+
+    .hero2__form{
+        padding: 0;
+        max-width: 310px;
+    }
+
+    .hero2__div1,
+    .hero2__image {
+        max-width: 310px;
+        height: 195px;
+    }
+
+    .hero2__btn {
+        top: 85px;
+        left: 135px;
+    }
+
+    .hero1__div6,
+    .hero4__div6{
+        max-width: 310px;
+    }
+
+    .hero1__div4,
+    .hero1__image{
+        max-width: 310px;
+        min-height: 250px;
+    }
+
+    .hero1__image1,
+    .hero4__image{
+        max-width: 310px;
+    }
+
+    .hero3__div3{
+        max-width: 310px;
+        margin-right: 0;
+    }
+
+    .hero6__div-form,
+    .hero6__img-karta 
+    {
+        max-width: 310px;
+    }
+      
 }
